@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1'?>
+<weblogic-web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://xmlns.oracle.com/weblogic/weblogic-web-app http://xmlns.oracle.com/weblogic/weblogic-web-app/1.1/weblogic-web-app.xsd"
+                  xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app">
+    
+    <security-role-assignment>
+        <role-name>Anyone</role-name>
+        <principal-name>users</principal-name>
+    </security-role-assignment>
+    <session-descriptor>
+        <timeout-secs>900</timeout-secs>
+        <cookie-name>SESSCOOKIE</cookie-name>
+        <cookie-path>/ProtectedApp/</cookie-path>
+        <persistent-store-type>REPLICATED_IF_CLUSTERED</persistent-store-type>
+    </session-descriptor>
+    <context-root>/ProtectedApp/</context-root>
+</weblogic-web-app>
