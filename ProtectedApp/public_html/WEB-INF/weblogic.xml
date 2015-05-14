@@ -2,9 +2,8 @@
 <weblogic-web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   xsi:schemaLocation="http://xmlns.oracle.com/weblogic/weblogic-web-app http://xmlns.oracle.com/weblogic/weblogic-web-app/1.1/weblogic-web-app.xsd"
                   xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app">
-    
     <security-role-assignment>
-        <role-name>Anyone</role-name>
+        <role-name>RAnyone</role-name>
         <principal-name>users</principal-name>
     </security-role-assignment>
     <session-descriptor>

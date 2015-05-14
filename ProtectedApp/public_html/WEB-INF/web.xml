@@ -16,7 +16,7 @@
       <url-pattern>/oracle.gif</url-pattern>
     </web-resource-collection>
     <auth-constraint>
-      <role-name>Anyone</role-name>
+      <role-name>RAnyone</role-name>
     </auth-constraint>
   </security-constraint>
 
@@ -29,6 +29,6 @@
     </form-login-config>
   </login-config>
   <security-role>
-    <role-name>Anyone</role-name>
+    <role-name>RAnyone</role-name>
   </security-role>
 </web-app>
